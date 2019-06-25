@@ -26,7 +26,7 @@ class Classification:
             yield answer
             if 'nextPageToken' not in answer:
                 break
-            
+
             next_page_token = answer['nextPageToken']
             answer = self.service.users().messages().list(userId='me', pageToken=next_page_token).execute()
 
