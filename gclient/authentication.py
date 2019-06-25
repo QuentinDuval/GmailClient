@@ -4,8 +4,11 @@ import pickle
 import os.path
 
 
-# If modifying these scopes, delete the file token.pickle.
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+# If you modify these scopes, delete the file token.pickle.
+# For more information about the SCOPES, see https://developers.google.com/gmail/api/auth/scopes
+
+SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
+
 token_pickle_path = '../secrets/token.pickle'
 credentials_path = '../secrets/credentials.json'
 
